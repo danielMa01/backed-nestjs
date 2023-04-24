@@ -8,9 +8,9 @@ export class SignupController {
     @Post('/api')
     Signup(@Body() body){
     let result = this.signupService.create(body.username,body.password).then(()=>{
-        return {message:'datos almacenados correctamente'}
+        return {message:'datos almacenados correctamente', state:true}
     }).catch((e)=>{
-        return {error:e};
+        return {message:e, state:false };
     });
       return result;
     }
