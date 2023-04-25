@@ -44,6 +44,9 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+##Don't forget update .env file
+$ nano .env
+
 
 ## Test
 
